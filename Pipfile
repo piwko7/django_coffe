@@ -4,7 +4,15 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
+pytest = "*"
+mypy = "*"
+flake8 = "*"
+isort = "*"
+pylint = "*"
+pre-commit = "*"
+bandit = "*"
+py-make = {editable = true, ref = "master", git = "https://github.com/tqdm/py-make.git"}
+black = "*"
 
 [dev-packages]
 
