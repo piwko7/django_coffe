@@ -13,8 +13,10 @@ pre-commit = "*"
 bandit = "*"
 py-make = {editable = true, ref = "master", git = "https://github.com/tqdm/py-make.git"}
 black = "*"
+psycopg2 = "*"
+django = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.11"
+python_version = "3.9"
