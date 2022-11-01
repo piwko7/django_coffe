@@ -15,6 +15,10 @@ py-make = {editable = true, ref = "master", git = "https://github.com/tqdm/py-ma
 black = "*"
 psycopg2 = "*"
 django = "*"
+djangorestframework = "*"
+markdown = "*"
+django-filter = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 
