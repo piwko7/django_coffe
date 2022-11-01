@@ -1,5 +1,14 @@
 .DEFAULT_GOAL := all
 
+run:
+	docker-compose up -d
+
+stop:
+	docker-compose down
+
+build:
+	docker-compose build
+
 toml_sort:
 	toml-sort pyproject.toml --all --in-place
 
