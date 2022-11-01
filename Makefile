@@ -9,6 +9,9 @@ stop:
 build:
 	docker-compose build
 
+logs:
+	docker logs -f django-coffe_mono_django_1
+
 toml_sort:
 	toml-sort pyproject.toml --all --in-place
 
