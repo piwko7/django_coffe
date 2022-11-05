@@ -28,7 +28,7 @@ def create_jwt(payload):
     }
 
     secret_key = settings.SECRET_KEY
-    total_params = str(base64url_encode(json.dumps(header))) + '.' + str(base64url_encode(json.dumps(payload, default=defaultconverter)))
+    total_params = str(base64url_encode(json.dumps(header))) + '.' + str(base64url_encode(json.dumps(payload, default=default_converter)))
     signature = hmac.new(secret_key.encode(), total_params.encode(), hashlib.sha256).hexdigest()
     token = total_params + '.' + str(base64url_encode(signature))
 
