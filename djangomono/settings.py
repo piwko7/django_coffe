@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     # 3rd
     "corsheaders",
     "rest_framework",
-
     # local
     "authx",
 ]
@@ -55,18 +54,18 @@ REST_FRAMEWORK = {
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
-    "corsheaders.middleware.CorsMiddleware", #corsheaders
-    'django.middleware.locale.LocaleMiddleware', #i18n
+    "corsheaders.middleware.CorsMiddleware",  # corsheaders
+    "django.middleware.locale.LocaleMiddleware",  # i18n
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "authx.middleware.SetLastUserLoggin"
+    "authx.middleware.SetLastUserLoggin",
 ]
 
 ROOT_URLCONF = "djangomono.urls"
-AUTH_USER_MODEL = 'authx.CustomUser'
+AUTH_USER_MODEL = "authx.CustomUser"
 
 TEMPLATES = [
     {
@@ -133,13 +132,11 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = "en-us"
 
 LANGUAGES = (
-    ('pl', 'polish'),
-    ('en', 'english'),
+    ("pl", "polish"),
+    ("en", "english"),
 )
 
-LOCALE_PATHS = (
-    os.path.join(BASE_DIR, 'locale/'),
-)
+LOCALE_PATHS = (os.path.join(BASE_DIR, "locale/"),)
 
 TIME_ZONE = "UTC"
 

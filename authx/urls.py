@@ -6,11 +6,9 @@ from .viewsets import UserViewSet
 router = DefaultRouter()
 
 router.register(
-    r'users',
+    r"users",
     UserViewSet,
-    basename='users',
+    basename="users",
 )
 
-urlpatterns = [
-    re_path(r'', include(router.urls))
-]
+urlpatterns = [re_path(r"", include(router.urls))]
