@@ -15,6 +15,12 @@ logs:
 toml_sort:
 	toml-sort pyproject.toml --all --in-place
 
+format:
+	pipenv run isort .
+	pipenv run black .
+	pipenv run flake8 .
+	pipenv run pylint src
+
 isort:
 	pipenv run isort .
 

@@ -51,4 +51,7 @@ class TokenAuthentication(BaseAuthentication):
         except User.DoesNotExist:
             raise AuthenticationFailed(_("User not found"), code="user_not_found")
 
+        if not user.is_active:
+            raise AuthenticationFailed(_("User is inactive"), code="user_inactive")
+
         return user
