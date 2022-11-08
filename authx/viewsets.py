@@ -101,4 +101,4 @@ class ActivationUserEmailView(APIView):
                 _("Thank you for your email confirmation. Now you can login your account."), status=HTTP_204_NO_CONTENT
             )
         else:
-            return Response(_('Activation link is invalid!'), status=HTTP_204_NO_CONTENT)
+            return Response(_("Activation link is invalid!"), status=HTTP_204_NO_CONTENT)

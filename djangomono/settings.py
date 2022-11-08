@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     "rest_framework",
     # local
     "authx",
+    "supplier",
+    "story",
 ]
 
 REST_FRAMEWORK = {
