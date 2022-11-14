@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "authx",
     "supplier",
     "story",
+    "menu",
 ]
 
 REST_FRAMEWORK = {

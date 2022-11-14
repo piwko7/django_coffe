@@ -26,11 +26,11 @@ class Supplier(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering = ('-name',)
+        ordering = ("-name",)
 
     @property
     def custom_id(self):
-        return f'{self.phone_number[1:3]} - {self.name[0:2]} - {self.created_date.year}'
+        return f"{self.phone_number[1:3]} - {self.name[0:2]} - {self.created_date.year}"
 
     def __str__(self):
         return self.custom_id
