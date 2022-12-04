@@ -1,7 +1,9 @@
 from rest_framework.viewsets import ModelViewSet
+
 from authx.permissions import IsManagerUser
-from .serializers import AdminSupplierSerializer
+
 from .models import Supplier
+from .serializers import AdminSupplierSerializer
 
 
 class SupplierViewSet(ModelViewSet):

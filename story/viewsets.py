@@ -1,7 +1,9 @@
 from rest_framework.viewsets import ModelViewSet
+
 from authx.permissions import IsBaristaUser
-from .serializers import BaristaIngredientSerializer, ManagerIngredientSerializer
+
 from .models import Ingredient
+from .serializers import BaristaIngredientSerializer, ManagerIngredientSerializer
 
 
 class IngredientViewSet(ModelViewSet):

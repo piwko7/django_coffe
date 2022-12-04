@@ -1,3 +1,15 @@
+[tool.ruff]
+line-length = 120
+select = [
+    "E",    # pycodestyle
+    "F",    # Pyflakes
+    "W",    # pycodestyle
+    "T",    # flake8-print
+    "C",    # flake8-comprehensions
+    "U",    # pyupgrade
+    "M",    # meta rules
+]
+
 [tool.black]
 line-length = 120
 target-version = ["py39"]

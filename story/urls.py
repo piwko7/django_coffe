@@ -1,6 +1,7 @@
-from django.urls.conf import include
 from django.urls import re_path
+from django.urls.conf import include
 from rest_framework.routers import DefaultRouter
+
 from .viewsets import IngredientViewSet
 
 router = DefaultRouter()

@@ -1,6 +1,8 @@
 from rest_framework.serializers import ModelSerializer, SlugRelatedField
-from .models import Ingredient
+
 from supplier.serializers import AdminSupplierSerializer
+
+from .models import Ingredient
 
 
 class BaseIngredientSerializer(ModelSerializer):

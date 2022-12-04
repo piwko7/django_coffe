@@ -53,6 +53,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     first_name = models.CharField(max_length=150, blank=True)
     last_name = models.CharField(max_length=150, blank=True)
     email = models.EmailField(max_length=255, unique=True)
+
     phone = models.PositiveIntegerField(unique=False, null=True, blank=True)
     is_active = models.BooleanField(_("Is active User"), default=True)
     is_admin = models.BooleanField(default=False)
@@ -68,7 +69,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
 
     @property
     def full_name(self):
-        return "{} {}".format(self.first_name, self.last_name, self.pk)
+        return "{} {}".format(self.first_name, self.last_name)
 
     def __str__(self):
         return str(self.full_name)

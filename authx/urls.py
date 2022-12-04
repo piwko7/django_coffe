@@ -2,7 +2,7 @@ from django.urls import re_path
 from django.urls.conf import include, path
 from rest_framework.routers import DefaultRouter
 
-from .viewsets import LoginView, UserViewSet, ActivationUserEmailView
+from .viewsets import ActivationUserEmailView, LoginView, UserViewSet
 
 router = DefaultRouter()
 
